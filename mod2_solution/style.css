@@ -1,0 +1,81 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color:#dedaea;
+}
+h1{
+	font-family: 'Oxygen', sans-serif;
+	margin-bottom: 80px;
+	color:#492644;
+	font-size:33px;
+	text-align: center;
+}
+div.container{
+	position:absolute;
+	top:100px;
+}
+.row{
+	width:100%;
+}
+.section1 ,.section2,.section3{
+	float:left;
+	padding:14px;
+}
+
+.content{
+	font-family:'Lato',sans-serif; 
+	padding:10px 10px;
+	font-weight: 500;
+	color:white;
+	font-size:18px;
+	border:1px solid black;
+}
+#section_1{
+	background-color: #9966ff;
+}
+#section_2{
+	background-color: #6a8ed2;
+}
+#section_3{
+	background-color: #ff7373;
+}
+.section_title{
+	background-color:#d04848;
+	font-size:23px;
+	font-family: 'Noto Sans JP',sans-serif;
+	color:white;
+	text-align:center;
+	border:1px solid black;
+	margin-top: 0px;
+	width:120px;
+	float:right;
+	font-weight:bold;
+	padding-top: 5px;
+}
+/*For Large Devices*/
+@media only screen and (min-width: 992px){
+	.section1, .section2 ,.section3{
+		display: inline-block;
+		width:33%;
+	}
+}
+/*For Medium Devices */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.section1, .section2{
+		display: inline-block;
+		width:50%;
+	}
+	.section3{
+		display: inline-block;
+		width:100%;
+	}
+
+}
+/*For Mobile Devices*/
+@media only screen and (max-width:767px ){
+	.section1, .section2 , .section3{
+		display: inline-block;
+		width:100%;
+	}
+}
